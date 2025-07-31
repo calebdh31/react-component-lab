@@ -1,14 +1,31 @@
-section {
-  display: flex;
+
+section{
+  display:flex;
+  gap:16px;
+  justify-content:center;
+  flex-wrap:nowrap;     
+  overflow-x:auto;      
+  padding:20px;
 }
 
-section .weather {
-  border: 1px solid #ccc;
-  flex: 1;
-  padding: 10px;
-  text-align: center;
+
+.weather{
+  display:flex;
+  flex-direction:column;
+  align-items:center;   
+  width:170px;
+  border:1px solid #ccc;
+  padding:16px;
+  text-align:center;
+  background:#1e1e1e;
+  border-radius:8px;
+  flex-shrink:0;       
 }
 
-.weather span {
-  font-weight: bold;
+.weather span{ font-weight:bold; }
+
+.weather img{
+  margin-top:12px;    
+  height:48px;
 }
+

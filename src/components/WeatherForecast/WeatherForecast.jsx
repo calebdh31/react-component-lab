@@ -5,14 +5,14 @@ import WeatherIcon from '../WeatherIcon/WeatherIcon.jsx';
 
 const WeatherForecast = ({ weatherForecasts }) => {
   return (
-   <section className="weather">
+   <div className="weather">
        {weatherForecasts.map((weatherForecasts) => (
         <>
         <WeatherData day={weatherForecasts.day} conditions={weatherForecasts.conditions} time={weatherForecasts.time} img={weatherForecasts.img} imgAlt={weatherForecasts.imgAlt}/>
         <WeatherIcon img={weatherForecasts.img} />
         </>
       ))}
-    </section>
+    </div>
   )
 }
 
